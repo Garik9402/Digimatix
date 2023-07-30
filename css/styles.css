@@ -36,7 +36,7 @@
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* montserrat-regular - latin */
+/* montserrat-regular - cyrillic_latin */
 
 @font-face {
   font-display: swap;
@@ -44,11 +44,11 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserrat-v25-latin-regular.woff2") format("woff2");
+  src: url("../fonts/montserrat-v25-cyrillic_latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* montserrat-700 - latin */
+/* montserrat-700 - cyrillic_latin */
 
 @font-face {
   font-display: swap;
@@ -56,7 +56,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/montserrat-v25-latin-700.woff2") format("woff2");
+  src: url("../fonts/montserrat-v25-cyrillic_latin-700.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -75,7 +75,7 @@ input {
 }
 
 body {
-  width: 100vw;
+  height: 100vh;
 }
 
 .btn {
@@ -100,8 +100,7 @@ body {
 }
 
 .btn:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  transform: translateY(2px);
 }
 
 .btn--long {
@@ -422,7 +421,6 @@ body {
   appearance: none;
   outline: none;
   -moz-appearance: textfield;
-  /* Chrome, Safari, Edge, Opera */
 }
 
 .form__input::-webkit-outer-spin-button,
@@ -992,7 +990,7 @@ input:-webkit-autofill:active {
   .form__btn,
   .form__input,
   .form__input-box {
-    padding: 15px;
+    padding: 0px;
   }
 
   .title,
@@ -1037,6 +1035,14 @@ input:-webkit-autofill:active {
     margin: 0 0 10px;
   }
 
+  .form__input {
+    padding: 15px;
+  }
+
+  .form__btn {
+    padding: 15px;
+  }
+
   .slider .slick-dots {
     margin-top: 20px;
   }
@@ -1047,11 +1053,12 @@ input:-webkit-autofill:active {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   .offers__btn-tab:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }
 
